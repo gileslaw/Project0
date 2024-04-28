@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://cqi3jfoma8jgk"]
+[gd_scene load_steps=13 format=3 uid="uid://cqi3jfoma8jgk"]
 
 [ext_resource type="Script" path="res://World/Player.gd" id="1_f63lc"]
 [ext_resource type="Material" uid="uid://dvfqc846doxs2" path="res://World/GreyMat.tres" id="1_oxwx0"]
+[ext_resource type="Script" path="res://World/reticle.gd" id="3_fdrux"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6lmb7"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -67,6 +68,47 @@ shape = SubResource("ConvexPolygonShape3D_xgu1k")
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 1.5, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head"]
+
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Reticle" type="CenterContainer" parent="UserInterface" node_paths=PackedStringArray("RETICLE_LINES")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_fdrux")
+RETICLE_LINES = [NodePath("Top"), NodePath("Right"), NodePath("Bottom"), NodePath("Left")]
+
+[node name="Top" type="Line2D" parent="UserInterface/Reticle"]
+points = PackedVector2Array(0, -5, 0, -15)
+width = 2.0
+
+[node name="Right" type="Line2D" parent="UserInterface/Reticle"]
+points = PackedVector2Array(5, 0, 15, 0)
+width = 2.0
+
+[node name="Bottom" type="Line2D" parent="UserInterface/Reticle"]
+points = PackedVector2Array(0, 5, 0, 15)
+width = 2.0
+
+[node name="Left" type="Line2D" parent="UserInterface/Reticle"]
+points = PackedVector2Array(-5, 0, -15, 0)
+width = 2.0
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="."]
 transform = Transform3D(2.94316, 0, 0, 0, 1.94673, 0, 0, 0, 1.9938, 10.4186, 0.322224, -0.0338232)
