@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://djpj3jwu0yjij"]
+[gd_scene load_steps=6 format=3 uid="uid://djpj3jwu0yjij"]
 
 [ext_resource type="Script" path="res://World/Player.gd" id="1_47y1b"]
 [ext_resource type="Script" path="res://World/reticle.gd" id="2_6g73x"]
+[ext_resource type="Material" uid="uid://dt3xlmertn3l1" path="res://World/purple_grid.tres" id="2_xjswg"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_5k2yc"]
 
@@ -15,6 +16,7 @@ script = ExtResource("1_47y1b")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Character"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = ExtResource("2_xjswg")
 mesh = SubResource("CapsuleMesh_5k2yc")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Character"]

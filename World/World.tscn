@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cqi3jfoma8jgk"]
+[gd_scene load_steps=8 format=3 uid="uid://cqi3jfoma8jgk"]
 
 [ext_resource type="Texture2D" uid="uid://kp54wpiqij21" path="res://Grids/Dark/texture_04.png" id="1_0vrb1"]
 [ext_resource type="Environment" uid="uid://bg6q3j66jcohg" path="res://World/env.tres" id="1_yccl3"]
 [ext_resource type="Material" uid="uid://c200roc0k4dri" path="res://World/orange_grid.tres" id="2_iafcc"]
 [ext_resource type="PackedScene" uid="uid://djpj3jwu0yjij" path="res://World/player.tscn" id="4_jbwor"]
+[ext_resource type="Material" uid="uid://dn2c6gt530ry4" path="res://World/green_grid.tres" id="4_v1ath"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_087s1"]
 dof_blur_far_enabled = true
@@ -51,5 +52,40 @@ radius = 1.0
 height = 5.0
 sides = 32
 
+[node name="room" type="CSGCombiner3D" parent="structures"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 5, 0)
+material_override = ExtResource("4_v1ath")
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="structures/room"]
+size = Vector3(20, 10, 20)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="structures/room"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 6, -5, 0)
+operation = 2
+radius = 4.0
+height = 10.0
+sides = 32
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="structures/room"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, -5, 0)
+operation = 2
+radius = 8.0
+height = 18.0
+sides = 24
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="structures/room"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, -5, 0)
+operation = 1
+radius = 10.0
+height = 21.0
+sides = 24
+
+[node name="OmniLight3D" type="OmniLight3D" parent="structures/room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0412521, 0.633398, 0)
+light_color = Color(1, 0.894118, 0.831373, 1)
+light_energy = 4.317
+omni_range = 19.71
+
 [node name="Player" parent="." instance=ExtResource("4_jbwor")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3522, 0.00508499, 3.71389)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.94212, 0.00508499, 0.952889)
