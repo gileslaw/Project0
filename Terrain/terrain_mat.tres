@@ -1,10 +1,9 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://8365f5tu68wa"]
 
-[ext_resource type="Texture2D" uid="uid://ci0hox5u8yqbd" path="res://Grids/Green/texture_09.png" id="1_vk5yb"]
+[ext_resource type="Texture2D" uid="uid://16iuxnyn0sdi" path="res://Terrain/lowpolyterrain_grass_t.png" id="1_a4o1q"]
 
 [resource]
 resource_name = "terrain_mat"
-albedo_color = Color(0.513233, 0.513233, 0.513233, 1)
-albedo_texture = ExtResource("1_vk5yb")
-uv1_scale = Vector3(30, 30, 30)
-uv1_triplanar = true
+albedo_color = Color(0.592157, 0.627451, 0.207843, 1)
+albedo_texture = ExtResource("1_a4o1q")
+uv1_scale = Vector3(50, 50, 50)

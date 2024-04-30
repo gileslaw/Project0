@@ -1,8 +1,8 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://la5uvpglgvkq"]
 
-[ext_resource type="Texture2D" uid="uid://ba33msr053tu" path="res://Grids/Light/texture_07.png" id="1_4yf8a"]
+[ext_resource type="Texture2D" uid="uid://ceo5kf5p6gb0i" path="res://Terrain/sand_t.png" id="1_6di5d"]
 
 [resource]
-albedo_color = Color(0.780398, 0.644519, 0.416627, 1)
-albedo_texture = ExtResource("1_4yf8a")
-uv1_triplanar = true
+albedo_color = Color(0.92549, 0.862745, 0.705882, 1)
+albedo_texture = ExtResource("1_6di5d")
+uv1_scale = Vector3(300, 300, 300)

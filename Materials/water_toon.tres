@@ -1,13 +1,13 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://fequmdpte1mp"]
 
-[ext_resource type="Shader" path="res://Materials/island.gdshader" id="1_buw12"]
+[ext_resource type="Shader" path="res://Materials/water_shader.gdshader" id="1_5wa4s"]
 
 [resource]
 render_priority = 0
-shader = ExtResource("1_buw12")
-shader_parameter/WATER_COL = Color(0.04, 0.38, 0.88, 1)
-shader_parameter/WATER2_COL = Color(0.04, 0.35, 0.78, 1)
-shader_parameter/FOAM_COL = Color(0.8125, 0.9609, 0.9648, 1)
-shader_parameter/distortion_speed = 2.0
-shader_parameter/tile = Vector2(2000, 2000)
-shader_parameter/wave_speed = 1.5
+shader = ExtResource("1_5wa4s")
+shader_parameter/WaveSpeed = 0.01
+shader_parameter/WaveIntensity = 0.2
+shader_parameter/WaveColor = Color(0, 1, 0.986607, 1)
+shader_parameter/WaterColor = Color(0, 0.169643, 1, 1)
+shader_parameter/FoamSize = 0.1
+shader_parameter/WaterOpacity = 0.72

@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://cgsuip8krrrdk"]
+[gd_scene load_steps=8 format=3 uid="uid://cgsuip8krrrdk"]
 
 [ext_resource type="Environment" uid="uid://bg6q3j66jcohg" path="res://Scenes/env.tres" id="1_un5ik"]
 [ext_resource type="PackedScene" uid="uid://djpj3jwu0yjij" path="res://Scenes/player.tscn" id="2_xiq0q"]
 [ext_resource type="Material" uid="uid://la5uvpglgvkq" path="res://Materials/platform.tres" id="3_dgudq"]
 [ext_resource type="PackedScene" uid="uid://hv81sw6j13jf" path="res://Terrain/lowpolyterrain.glb" id="4_luh1t"]
-[ext_resource type="Material" uid="uid://dqtrc0kfoelju" path="res://Materials/water_shader.tres" id="5_p0fmk"]
 [ext_resource type="Material" uid="uid://fequmdpte1mp" path="res://Materials/water_toon.tres" id="6_bm3kv"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_hwt7c"]
@@ -23,7 +22,6 @@ camera_attributes = SubResource("CameraAttributesPractical_hwt7c")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -0.500003, 0.749999, -0.43301, 0, 0, 0)
-visible = false
 shadow_enabled = true
 
 [node name="Player" parent="." instance=ExtResource("2_xiq0q")]
@@ -40,12 +38,6 @@ size = Vector3(1000, 1, 1000)
 [node name="lowpolyterrain" parent="structures" instance=ExtResource("4_luh1t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 
-[node name="water" type="CSGBox3D" parent="structures"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00572968, -1.99093, -0.000160217)
-material_override = ExtResource("5_p0fmk")
-size = Vector3(1000, 10, 1000)
-
-[node name="plane" type="CSGMesh3D" parent="structures"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00213623, 4.02036, 0.00108147)
-visible = false
+[node name="water" type="CSGMesh3D" parent="structures"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00213623, 2.02036, 0.00108147)
 mesh = SubResource("PlaneMesh_g5m0y")
