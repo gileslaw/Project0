@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://djpj3jwu0yjij"]
 
-[ext_resource type="Script" path="res://World/Player.gd" id="1_47y1b"]
-[ext_resource type="Script" path="res://World/reticle.gd" id="2_6g73x"]
-[ext_resource type="Material" uid="uid://dt3xlmertn3l1" path="res://World/purple_grid.tres" id="2_xjswg"]
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_47y1b"]
+[ext_resource type="Script" path="res://Scripts/reticle.gd" id="2_6g73x"]
+[ext_resource type="Material" uid="uid://dt3xlmertn3l1" path="res://Materials/purple_grid.tres" id="2_xjswg"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_5k2yc"]
 

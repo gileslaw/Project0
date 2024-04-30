@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://cqi3jfoma8jgk"]
 
 [ext_resource type="Texture2D" uid="uid://kp54wpiqij21" path="res://Grids/Dark/texture_04.png" id="1_0vrb1"]
-[ext_resource type="Environment" uid="uid://bg6q3j66jcohg" path="res://World/env.tres" id="1_yccl3"]
-[ext_resource type="Material" uid="uid://c200roc0k4dri" path="res://World/orange_grid.tres" id="2_iafcc"]
-[ext_resource type="PackedScene" uid="uid://djpj3jwu0yjij" path="res://World/player.tscn" id="4_jbwor"]
-[ext_resource type="Material" uid="uid://dn2c6gt530ry4" path="res://World/green_grid.tres" id="4_v1ath"]
+[ext_resource type="Environment" uid="uid://bg6q3j66jcohg" path="res://Scenes/env.tres" id="1_yccl3"]
+[ext_resource type="Material" uid="uid://c200roc0k4dri" path="res://Materials/orange_grid.tres" id="2_iafcc"]
+[ext_resource type="PackedScene" uid="uid://djpj3jwu0yjij" path="res://Scenes/player.tscn" id="4_jbwor"]
+[ext_resource type="Material" uid="uid://dn2c6gt530ry4" path="res://Materials/green_grid.tres" id="4_v1ath"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_087s1"]
 dof_blur_far_enabled = true

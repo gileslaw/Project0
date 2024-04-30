@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://8365f5tu68wa"]
+
+[ext_resource type="Texture2D" uid="uid://ci0hox5u8yqbd" path="res://Grids/Green/texture_09.png" id="1_vk5yb"]
+
+[resource]
+resource_name = "terrain_mat"
+albedo_color = Color(0.513233, 0.513233, 0.513233, 1)
+albedo_texture = ExtResource("1_vk5yb")
+uv1_scale = Vector3(30, 30, 30)
+uv1_triplanar = true
