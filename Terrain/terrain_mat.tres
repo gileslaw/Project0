@@ -4,6 +4,6 @@
 
 [resource]
 resource_name = "terrain_mat"
-albedo_color = Color(0.592157, 0.627451, 0.207843, 1)
+albedo_color = Color(0.539433, 0.571893, 0.184671, 1)
 albedo_texture = ExtResource("1_a4o1q")
 uv1_scale = Vector3(50, 50, 50)
