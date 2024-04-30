@@ -1,8 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://la5uvpglgvkq"]
-
-[ext_resource type="Texture2D" uid="uid://ba33msr053tu" path="res://Grids/Light/texture_07.png" id="1_bqe2a"]
-
-[resource]
-albedo_color = Color(0.101847, 0.502847, 0.999959, 1)
-albedo_texture = ExtResource("1_bqe2a")
-uv1_triplanar = true
