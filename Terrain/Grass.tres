@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cy7g6itt48jvs"]
+
+[ext_resource type="Texture2D" uid="uid://16iuxnyn0sdi" path="res://Terrain/lowpolyterrain_grass_t.png" id="1_qe2tp"]
+
+[resource]
+resource_name = "Grass"
+cull_mode = 2
+albedo_texture = ExtResource("1_qe2tp")
+uv1_scale = Vector3(50, 50, 50)
+uv1_triplanar = true

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ddnukuetj4wst"]
+
+[ext_resource type="Texture2D" uid="uid://ceo5kf5p6gb0i" path="res://Terrain/sand_t.png" id="1_ifpwl"]
+
+[resource]
+resource_name = "Sand"
+cull_mode = 2
+albedo_texture = ExtResource("1_ifpwl")
+uv1_scale = Vector3(50, 50, 50)
+uv1_triplanar = true

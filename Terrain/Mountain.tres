@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://5k76hmq3ekik"]
+
+[resource]
+resource_name = "Mountain"
+cull_mode = 2
+albedo_color = Color(0.537011, 0.537011, 0.537011, 1)
+uv1_scale = Vector3(40, 40, 40)
+uv1_triplanar = true
